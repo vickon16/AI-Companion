@@ -13,14 +13,14 @@ import {
 } from "@/components/ui/sheet"
 import Sidebar from "@/components/Sidebar";
 
-const MobileSidebar = () => {
+const MobileSidebar = ({isPro} : {isPro : boolean}) => {
   return (
     <Sheet>
       <SheetTrigger asChild className="md:hidden">
         <Menu className="w-5 h-5 flex-shrink-0" />
       </SheetTrigger>
       <SheetContent side="left" className="p-0 pt-10 w-32">
-        <Sidebar />
+        <Sidebar isPro={isPro} />
       </SheetContent>
     </Sheet>
   )

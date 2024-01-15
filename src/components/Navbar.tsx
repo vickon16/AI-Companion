@@ -25,7 +25,7 @@ export default function Navbar({isPro} : {isPro : boolean}) {
   return (
     <nav className="fixed w-full z-50 flex justify-between items-center py-2 px-4 border-b border-b-muted/80 h-16">
       <div className="flex items-center">
-        <MobileSidebar />
+        <MobileSidebar isPro={isPro} />
         <Link href={"/"}>
           <h1
             className={cn(
